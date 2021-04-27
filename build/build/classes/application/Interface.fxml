@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+	prefWidth="1000.0" style="-fx-background-color: #ffffff;"
+	xmlns="http://javafx.com/javafx/11.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.InterfaceController">
+	<children>
+		<AnchorPane fx:id="left_holld" prefHeight="600.0"
+			prefWidth="200.0" style="-fx-background-color: #F3F3FD;"
+			AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+			AnchorPane.topAnchor="0.0">
+			<children>
+				<Pane layoutX="68.0" layoutY="14.0" prefHeight="64.0"
+					prefWidth="64.0"
+					style="-fx-background-color: #FFFFFF; -fx-background-radius: 40;">
+					<children>
+						<ImageView fitHeight="64.0" fitWidth="64.0"
+							pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../Images/logo%20(2).png" />
+							</image>
+						</ImageView>
+					</children>
+				</Pane>
+				<Separator layoutX="31.0" layoutY="91.0" prefHeight="4.0"
+					prefWidth="137.0" style="-fx-background-color: #B5C4E4;" />
+				<Button fx:id="btnlogout" layoutX="68.0" layoutY="512.0"
+					mnemonicParsing="false" onAction="#btnlogoutIN" prefHeight="26.0"
+					prefWidth="64.0"
+					style="-fx-background-color: #0056FF; -fx-background-radius: 20 20 20 20; -fx-effect: dropshadow( gaussian , rgba(0,86,255,0.7) , 10,0,0,4 );"
+					stylesheets="@application.css" text="Log out" textFill="WHITE"
+					AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="68.0">
+					<font>
+						<Font name="System Bold" size="12.0" />
+					</font>
+				</Button>
+				<VBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="152.0"
+					prefHeight="187.0" prefWidth="158.0" spacing="4.0">
+					<children>
+						<Button fx:id="btnexplore" graphicTextGap="15.0"
+							mnemonicParsing="false" onAction="#btn_explore" prefHeight="30.0"
+							prefWidth="154.0" style="-fx-background-color: none;"
+							stylesheets="@application.css" text="Explore" textFill="#6e87b6"
+							VBox.vgrow="ALWAYS">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+							<graphic>
+								<SVGPath
+									content="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M12,20 C7.59,20 4,16.41 4,12 C4,7.59 7.59,4 12,4 C16.41,4 20,7.59 20,12 C20,16.41 16.41,20 12,20 Z M6.5,17.5 L14.01,14.01 L17.5,6.5 L9.99,9.99 L6.5,17.5 Z M12,10.9 C12.61,10.9 13.1,11.39 13.1,12 C13.1,12.61 12.61,13.1 12,13.1 C11.39,13.1 10.9,12.61 10.9,12 C10.9,11.39 11.39,10.9 12,10.9 Z"
+									fill="#6e87b6" />
+							</graphic>
+						</Button>
+						<Button fx:id="btnprofile" graphicTextGap="15.0"
+							layoutX="10.0" layoutY="10.0" mnemonicParsing="false"
+							onAction="#btn_profile" prefHeight="32.0" prefWidth="149.0"
+							style="-fx-background-color: none;"
+							stylesheets="@application.css" text="Profile" textFill="#6e87b6">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+							<graphic>
+								<ImageView fitHeight="22.0" fitWidth="22.0"
+									pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../Images/male_user_64px.png" />
+									</image>
+								</ImageView>
+							</graphic>
+						</Button>
+						<Button fx:id="btnservices" graphicTextGap="15.0"
+							layoutX="10.0" layoutY="40.0" mnemonicParsing="false"
+							onAction="#btn_services" prefHeight="30.0" prefWidth="158.0"
+							style="-fx-background-color: none;"
+							stylesheets="@application.css" text="Services" textFill="#6e87b6">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+							<graphic>
+								<ImageView fitHeight="22.0" fitWidth="22.0"
+									pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../Images/service_64px.png" />
+									</image>
+								</ImageView>
+							</graphic>
+						</Button>
+						<Button fx:id="btncart" graphicTextGap="15.0"
+							layoutX="10.0" layoutY="123.0" mnemonicParsing="false"
+							onAction="#btn_cart" prefHeight="32.0" prefWidth="134.0"
+							style="-fx-background-color: none;"
+							stylesheets="@application.css" text="Cart" textFill="#6e87b6">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+							<graphic>
+								<ImageView fitHeight="22.0" fitWidth="22.0"
+									pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../Images/shopping_cart_64px.png" />
+									</image>
+								</ImageView>
+							</graphic>
+						</Button>
+						<Button fx:id="btncontact" graphicTextGap="15.0"
+							layoutX="10.0" layoutY="140.0" mnemonicParsing="false"
+							onAction="#btn_contact" prefHeight="32.0" prefWidth="156.0"
+							style="-fx-background-color: none;"
+							stylesheets="@application.css" text="Contact" textFill="#6e87b6">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+							<graphic>
+								<ImageView fitHeight="22.0" fitWidth="22.0"
+									pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../Images/contact_details_64px.png" />
+									</image>
+								</ImageView>
+							</graphic>
+						</Button>
+					</children>
+				</VBox>
+			</children>
+		</AnchorPane>
+		<Separator layoutX="237.0" layoutY="91.0" prefHeight="4.0"
+			prefWidth="725.0" style="-fx-background-color: #B5C4E4;"
+			AnchorPane.leftAnchor="237.0"
+			AnchorPane.rightAnchor="37.39999999999998"
+			AnchorPane.topAnchor="91.0" />
+		<ScrollPane fx:id="scrollInterface" fitToHeight="true"
+			fitToWidth="true" hbarPolicy="NEVER" layoutX="237.0" layoutY="145.0"
+			prefHeight="455.0" prefWidth="763.0"
+			style="-fx-background-color: #ffffff;" stylesheets="@application.css"
+			AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="237.0"
+			AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="145.0">
+			<content>
+				<AnchorPane prefHeight="455.0" prefWidth="763.0"
+					style="-fx-background-color: #ffffff;" />
+			</content>
+		</ScrollPane>
+		<ImageView fitHeight="40.0" fitWidth="40.0" layoutX="909.0"
+			layoutY="25.0" pickOnBounds="true" preserveRatio="true"
+			AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="25.0">
+			<image>
+				<Image url="@../../../../Desktop/Capture.PNG" />
+			</image>
+		</ImageView>
+		<TextField fx:id="searchfilter" layoutX="561.0"
+			layoutY="32.0" onAction="#search" prefHeight="26.0" prefWidth="218.0"
+			promptText="Search"
+			style="-fx-background-radius: 20 20 20 20; -fx-border-radius: 20 20 20 20; -fx-background-color: rgba(0,86,255,0.1); -fx-border-color: #0056FF;"
+			stylesheets="@application.css" AnchorPane.rightAnchor="130.0"
+			AnchorPane.topAnchor="32.0" />
+		<ImageView fitHeight="24.0" fitWidth="24.0" layoutX="667.0"
+			layoutY="32.0" pickOnBounds="true" preserveRatio="true"
+			AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="32.0">
+			<image>
+				<Image url="@../Images/search_64px.png" />
+			</image>
+		</ImageView>
+		<ComboBox fx:id="combofilter" layoutX="449.0" layoutY="33.0"
+			onAction="#searchcombobox" prefWidth="150.0" />
+		<DatePicker fx:id="datepickerfilter" layoutX="237.0"
+			layoutY="33.0" onAction="#searchdatepicker" />
+	</children>
+</AnchorPane>

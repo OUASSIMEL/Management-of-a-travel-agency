@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" minHeight="600.0" minWidth="763.0" style="-fx-background-color: #ffffff;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InterfaceController">
+  <content>
+    <AnchorPane minHeight="455.0" minWidth="763.0" prefHeight="600.0" prefWidth="1332.0" style="-fx-background-color: #FFF9F4;">
+         <children>
+            <ImageView fitHeight="203.0" fitWidth="524.0" layoutX="24.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="784.0">
+               <image>
+                  <Image url="@../Images/panorama-2117310_1920.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#7c0c39" layoutX="693.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACHETER UN VOYAGE N'EST PAS UN ACHAT COMME LES AUTRES" textAlignment="CENTER" wrappingWidth="301.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="693.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rêve d'une vie, accomplissement d'une année de travail, envie d'un moment privilégié,retrouvailles en famille ou entre amis, découverte du monde..." textAlignment="CENTER" wrappingWidth="285.13671875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#0e4564" layoutX="30.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nos agences vous apportent">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <GridPane alignment="CENTER" hgap="10.0" layoutX="10.0" layoutY="340.0" prefHeight="259.0" prefWidth="729.0" vgap="10.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="340.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="258.0" prefWidth="306.0" style="-fx-background-color: #15CAA9;">
+                     <children>
+                        <AnchorPane layoutY="-1.0" prefHeight="34.0" prefWidth="356.0" style="-fx-background-color: #FFC300;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text layoutX="91.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pour les individus" textAlignment="CENTER" wrappingWidth="131.8359375">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <Text layoutX="32.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Emission de tickets d'avion, train, bateau*Réservation d'hôtels à des tarifs négociés*Réservation de voyages forfaitaires (vacances et séjours)*Organisation de voyages sur-mesure" wrappingWidth="249.33672332763672">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="258.0" prefWidth="390.0" style="-fx-background-color: #15CAA9;" GridPane.columnIndex="1">
+                     <children>
+                        <AnchorPane layoutY="-1.0" prefHeight="34.0" prefWidth="318.0" style="-fx-background-color: #FFC300;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text layoutX="97.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pour les groupes" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <Text layoutX="21.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Prise en charge de tous les aspects de l'organisation *Transport et hébergement*Activités culturelles et sportives*Restaurants, excursions et spectacles*Guide local" wrappingWidth="270.9367446899414">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="171.0" prefWidth="351.0" style="-fx-background-color: #15CAA9;" GridPane.columnIndex="2">
+                     <children>
+                        <Text layoutX="21.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Réservation et émission immédiate de billets d'avion et de train, location de voitures, et réservation d'hôtels à des tarifs négociés*Suivi et support administratif et financier*Assistance 24h/24h*Service personnalisé" wrappingWidth="270.9367446899414">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                        <AnchorPane prefHeight="34.0" prefWidth="325.0" style="-fx-background-color: #FFC300;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text layoutX="63.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pour les voyages d'affaires" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="172.0" prefWidth="357.0" style="-fx-background-color: #15CAA9;" GridPane.columnIndex="3">
+                     <children>
+                        <AnchorPane layoutY="-1.0" prefHeight="34.0" prefWidth="314.0" style="-fx-background-color: #FFC300;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text layoutX="41.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meeting, congrès et évènements" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <Text layoutX="21.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Conception : recherche de lieux, catering, hébergement, transport, programme social,...*Suivi financier : gestion du budget, respect du cahier des charges, négociation avec les fournisseurs...*Suivi logistique : inscription, badges, supports technique, support de communication, ..." wrappingWidth="270.9367446899414">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+            <Pane prefHeight="81.0" prefWidth="763.0" style="-fx-background-color: #0058ff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fill="WHITE" layoutX="25.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nos services" wrappingWidth="150.36328125">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
